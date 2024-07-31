@@ -7,15 +7,19 @@ let level=0;
 let btns = ["b1","b2","b3","b4"];
 
 let h3 = document.querySelector("h3");
+ 
 
+ 
 document.addEventListener("keypress" , function(){
    if(started== false){
     console.log("game start");
     started=true;
-   }
+}
+ 
   levelUp();
 
 });
+
 
 
 function gameFlash(btn){
@@ -90,4 +94,5 @@ function reset(){
     userSeq=[];
     level=0;
     started=false;
+     
 }
